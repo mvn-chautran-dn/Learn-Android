@@ -59,13 +59,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="50dp"
         android:layout_marginEnd="40dp"
-        android:textColor="@color/white"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/button_background"
         android:text="@string/next"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/text_login_with" />
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/text_login_with"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/text_login_with"
@@ -76,8 +76,7 @@
         android:textColor="@color/green_light"
         app:layout_constraintBottom_toTopOf="@id/ln_row"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/ln_row"
@@ -103,6 +102,4 @@
             android:layout_height="50dp"
             android:src="@drawable/img_facebook" />
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
